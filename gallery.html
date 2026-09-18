@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1 class="logo">MyPortfolio</h1>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html" class="active">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- GALLERY -->
+
+    <section class="gallery">
+
+        <div class="section-title">
+
+            <p>MY RECENT WORK</p>
+
+            <h2>My Gallery</h2>
+
+        </div>
+
+
+        <div class="gallery-container">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="image/D.png"
+                    alt="Project One"
+                    onclick="openImage(this.src)"
+                >
+
+                <div class="gallery-info">
+
+                    <h3>Project One</h3>
+
+                    <p>
+                        My first project.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="view-btn"
+                        onclick="openImage('image/D.png')"
+                    >
+                        View Image
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="image/q.png"
+                    alt="Project Two"
+                    onclick="openImage(this.src)"
+                >
+
+                <div class="gallery-info">
+
+                    <h3>Project Two</h3>
+
+                    <p>
+                        My second project.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="view-btn"
+                        onclick="openImage('image/q.png')"
+                    >
+                        View Image
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 3 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="image/l.png"
+                    alt="Project Three"
+                    onclick="openImage(this.src)"
+                >
+
+                <div class="gallery-info">
+
+                    <h3>Project Three</h3>
+
+                    <p>
+                        My third project.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="view-btn"
+                        onclick="openImage('image/l.png')"
+                    >
+                        View Image
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 4 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="image/w.png"
+                    alt="Project Four"
+                    onclick="openImage(this.src)"
+                >
+
+                <div class="gallery-info">
+
+                    <h3>Project Four</h3>
+
+                    <p>
+                        My fourth project.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="view-btn"
+                        onclick="openImage('image/w.png')"
+                    >
+                        View Image
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 5 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="image/e.png"
+                    alt="Project Five"
+                    onclick="openImage(this.src)"
+                >
+
+                <div class="gallery-info">
+
+                    <h3>Project Five</h3>
+
+                    <p>
+                        My fifth project.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="view-btn"
+                        onclick="openImage('image/e.png')"
+                    >
+                        View Image
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 6 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="image/kk.png"
+                    alt="Project Six"
+                    onclick="openImage(this.src)"
+                >
+
+                <div class="gallery-info">
+
+                    <h3>Project Six</h3>
+
+                    <p>
+                        My sixth project.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="view-btn"
+                        onclick="openImage('image/kk.png')"
+                    >
+                        View Image
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- IMAGE POPUP -->
+
+    <div
+        id="imageModal"
+        class="image-modal"
+    >
+
+        <span
+            class="close-modal"
+            onclick="closeImage()"
+        >
+            &times;
+        </span>
+
+        <img
+            id="modalImage"
+            src=""
+            alt="Full Size Image"
+        >
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; KYLE OCARIZA BSIT 2B.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openImage(imageSource) {
+
+            const modal =
+                document.getElementById("imageModal");
+
+            const modalImage =
+                document.getElementById("modalImage");
+
+            modalImage.src = imageSource;
+
+            modal.style.display = "flex";
+
+        }
+
+
+        function closeImage() {
+
+            const modal =
+                document.getElementById("imageModal");
+
+            modal.style.display = "none";
+
+            document.getElementById("modalImage").src = "";
+
+        }
+
+
+        document
+            .getElementById("imageModal")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+                    closeImage();
+                }
+
+            });
+
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Escape") {
+                    closeImage();
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

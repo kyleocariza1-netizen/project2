@@ -1,64 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>Home | My Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- NAVIGATION -->
     <header>
-
         <nav class="navbar">
 
             <h1 class="logo">MyPortfolio</h1>
 
             <ul class="nav-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#gallery">Gallery</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
         </nav>
-
     </header>
 
 
-
-    <!-- =========================
-         HOME
-    ========================== -->
-
-    <section id="home" class="home">
+    <!-- HOME -->
+    <section class="home">
 
         <div class="home-content">
 
@@ -66,33 +38,24 @@
                 WELCOME TO MY PORTFOLIO
             </p>
 
-
             <h2>
-
                 Hello, I'm
-
                 <span>KYLE OCARIZA</span>
-
             </h2>
 
-
             <p class="intro">
-
                 I'm a creative student and aspiring web developer.
                 Welcome to my personal portfolio where you can
                 learn more about me and see some of my work.
-
             </p>
-
 
             <div class="home-buttons">
 
-                <a href="#gallery" class="btn">
+                <a href="gallery.html" class="btn">
                     View My Work
                 </a>
 
-
-                <a href="#contact" class="btn btn-outline">
+                <a href="contact.html" class="btn btn-outline">
                     Contact Me
                 </a>
 
@@ -101,23 +64,13 @@
         </div>
 
 
-
-        <!-- PROFILE IMAGE -->
-
         <div class="home-image">
 
             <div class="profile-circle">
 
-                <!--
-                YOUR PROFILE IMAGE
-
-                Make sure the file is:
-                image/s.png
-                -->
-
                 <img
                     src="image/s.png"
-                    alt="My Profile Photo"
+                    alt="Kyle Ocariza Profile Photo"
                 >
 
             </div>
@@ -127,728 +80,15 @@
     </section>
 
 
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section id="about" class="about">
-
-
-        <div class="section-title">
-
-            <p>GET TO KNOW ME</p>
-
-            <h2>About Me</h2>
-
-        </div>
-
-
-
-        <div class="about-container">
-
-
-            <!-- ABOUT IMAGE -->
-
-            <div class="about-image">
-
-                <img
-                    src="image/s.png"
-                    alt="About Me"
-                >
-
-            </div>
-
-
-
-            <!-- ABOUT TEXT -->
-
-            <div class="about-content">
-
-                <h3>
-                    Hello! I'm Your Name
-                </h3>
-
-
-                <p>
-
-                    I am a student who is interested in technology,
-                    web development, and creative design.
-
-                </p>
-
-
-                <p>
-
-                    I enjoy learning new skills and creating
-                    projects using HTML and CSS.
-
-                </p>
-
-
-                <p>
-
-                    This portfolio website contains information
-                    about me, my projects, and my gallery.
-
-                </p>
-
-
-
-                <!-- SKILLS -->
-
-                <div class="skills">
-
-
-                    <div class="skill">
-
-                        <span>HTML</span>
-
-                        <div class="skill-bar">
-
-                            <div class="skill-fill html"></div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="skill">
-
-                        <span>CSS</span>
-
-                        <div class="skill-bar">
-
-                            <div class="skill-fill css"></div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="skill">
-
-                        <span>Web Design</span>
-
-                        <div class="skill-bar">
-
-                            <div class="skill-fill design"></div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         GALLERY
-    ========================== -->
-
-    <section id="gallery" class="gallery">
-
-
-        <div class="section-title">
-
-            <p>MY RECENT WORK</p>
-
-            <h2>My Gallery</h2>
-
-        </div>
-
-
-
-        <div class="gallery-container">
-
-
-
-            <!-- =====================
-                 IMAGE 1
-            ====================== -->
-
-            <div class="gallery-card">
-
-                <img
-                    src="image/D.png"
-                    alt="Project One"
-                    onclick="openImage(this.src)"
-                >
-
-
-                <div class="gallery-info">
-
-                    <h3>
-                        
-                    </h3>
-
-
-                    <p>
-                        
-                    </p>
-
-
-                    <button
-                        type="button"
-                        class="view-btn"
-                        onclick="openImage('image/D.png')"
-                    >
-
-                        View Image
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================
-                 IMAGE 2
-            ====================== -->
-
-            <div class="gallery-card">
-
-                <img
-                    src="image/q.png"
-                    alt="Project Two"
-                    onclick="openImage(this.src)"
-                >
-
-
-                <div class="gallery-info">
-
-                    <h3>
-                        
-                    </h3>
-
-
-                    <p>
-                        
-                    </p>
-
-
-                    <button
-                        type="button"
-                        class="view-btn"
-                        onclick="openImage('image/k.png')"
-                    >
-
-                        View Image
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================
-                 IMAGE 3
-            ====================== -->
-
-            <div class="gallery-card">
-
-                <img
-                    src="image/l.png"
-                    alt="Project Three"
-                    onclick="openImage(this.src)"
-                >
-
-
-                <div class="gallery-info">
-
-                    <h3>
-                        
-                    </h3>
-
-
-                    <p>
-                       
-                    </p>
-
-
-                    <button
-                        type="button"
-                        class="view-btn"
-                        onclick="openImage('image/kk.png')"
-                    >
-
-                        View Image
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================
-                 IMAGE 4
-            ====================== -->
-
-            <div class="gallery-card">
-
-                <img
-                    src="image/w.png"
-                    alt="Project Four"
-                    onclick="openImage(this.src)"
-                >
-
-
-                <div class="gallery-info">
-
-                    <h3>
-                        
-                    </h3>
-
-
-                    <p>
-                      
-                    </p>
-
-
-                    <button
-                        type="button"
-                        class="view-btn"
-                        onclick="openImage('image/kkk.png')"
-                    >
-
-                        View Image
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================
-                 IMAGE 5
-            ====================== -->
-
-            <div class="gallery-card">
-
-                <img
-                    src="image/e.png"
-                    alt="Project Five"
-                    onclick="openImage(this.src)"
-                >
-
-
-                <div class="gallery-info">
-
-                    <h3>
-                        
-                    </h3>
-
-
-                    <p>
-                      
-                    </p>
-
-
-                    <button
-                        type="button"
-                        class="view-btn"
-                        onclick="openImage('image/kkkkk.png')"
-                    >
-
-                        View Image
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================
-                 IMAGE 6
-            ====================== -->
-
-            <div class="gallery-card">
-
-                <img
-                    src="image/kk.png"
-                    alt="Project Six"
-                    onclick="openImage(this.src)"
-                >
-
-
-                <div class="gallery-info">
-
-                    <h3>
-                        
-                    </h3>
-
-
-                    <p>
-                        
-                    </p>
-
-
-                    <button
-                        type="button"
-                        class="view-btn"
-                        onclick="openImage('image/myphoto.png')"
-                    >
-
-                        View Image
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         IMAGE POPUP
-    ========================== -->
-
-    <div
-        id="imageModal"
-        class="image-modal"
-    >
-
-
-        <span
-            class="close-modal"
-            onclick="closeImage()"
-        >
-
-            &times;
-
-        </span>
-
-
-        <img
-            id="modalImage"
-            src=""
-            alt="Full Size Image"
-        >
-
-
-    </div>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section id="contact" class="contact">
-
-
-        <div class="section-title">
-
-            <p></p>
-
-            <h2>Contact Me</h2>
-
-        </div>
-
-
-
-        <div class="contact-container">
-
-
-            <!-- CONTACT INFORMATION -->
-
-            <div class="contact-info">
-
-
-                <h3>
-                    Let's Talk
-                </h3>
-
-
-                <p>
-
-                    If you have any questions, suggestions,
-                    or want to know more about my projects,
-                    feel free to contact me.
-
-                </p>
-
-
-
-                <div class="contact-item">
-
-                    <strong>
-                        Email:
-                    </strong>
-
-                    <p>
-                        kylegwapo@email.com
-                    </p>
-
-                </div>
-
-
-
-                <div class="contact-item">
-
-                    <strong>
-                        Phone:
-                    </strong>
-
-                    <p>
-                        +63 999 9999 999
-                    </p>
-
-                </div>
-
-
-
-                <div class="contact-item">
-
-                    <strong>
-                        Location:
-                    </strong>
-
-                    <p>
-                        Philippines
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- CONTACT FORM -->
-
-            <form
-                id="contactForm"
-                class="contact-form"
-            >
-
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                >
-
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required
-                >
-
-
-                <input
-                    type="text"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                >
-
-
-                <textarea
-                    id="message"
-                    placeholder="Your Message"
-                    required
-                ></textarea>
-
-
-                <button
-                    type="submit"
-                    class="submit-btn"
-                >
-
-                    Send Message
-
-                </button>
-
-
-                <p
-                    id="formMessage"
-                    class="form-message"
-                ></p>
-
-
-            </form>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer>
 
-
         <p>
-
-            &copy; 
-            <span>
-                KYLE OCARIZA BSIT 2B
-            </span>.
-
-            
-
+            &copy; KYLE OCARIZA BSIT 2B.
         </p>
-
-
-        <p>
-            
-        </p>
-
 
     </footer>
-
-
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
-    <script>
-
-
-        /* =========================
-           OPEN IMAGE
-        ========================== */
-
-        function openImage(imageSource) {
-
-            const modal =
-                document.getElementById("imageModal");
-
-            const modalImage =
-                document.getElementById("modalImage");
-
-
-            modalImage.src = imageSource;
-
-            modal.style.display = "flex";
-
-        }
-
-
-
-        /* =========================
-           CLOSE IMAGE
-        ========================== */
-
-        function closeImage() {
-
-            const modal =
-                document.getElementById("imageModal");
-
-
-            modal.style.display = "none";
-
-            document.getElementById("modalImage").src = "";
-
-        }
-
-
-
-        /* =========================
-           CLICK OUTSIDE IMAGE
-        ========================== */
-
-        document
-            .getElementById("imageModal")
-            .addEventListener("click", function(event) {
-
-                if (event.target === this) {
-
-                    closeImage();
-
-                }
-
-            });
-
-
-
-        /* =========================
-           ESC KEY
-        ========================== */
-
-        document.addEventListener(
-            "keydown",
-            function(event) {
-
-                if (event.key === "Escape") {
-
-                    closeImage();
-
-                }
-
-            }
-        );
-
-
-
-        /* =========================
-           CONTACT FORM
-        ========================== */
-
-        document
-            .getElementById("contactForm")
-            .addEventListener("submit", function(event) {
-
-
-                event.preventDefault();
-
-
-                const name =
-                    document.getElementById("name").value;
-
-
-                const formMessage =
-                    document.getElementById("formMessage");
-
-
-                formMessage.textContent =
-                    "Thank you, " +
-                    name +
-                    "! Your message has been received.";
-
-
-                this.reset();
-
-            });
-
-
-    </script>
-
 
 </body>
 
 </html>
-```
